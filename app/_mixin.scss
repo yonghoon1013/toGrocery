@@ -1,0 +1,28 @@
+
+:root {
+    --moreBig: 5rem;
+    --big: 3rem;
+    --middle: 2rem;
+    --small: 1.5rem;
+    .fixed{ 
+        position: fixed;
+        right: calc(50% - 400px) 
+    }
+}
+
+
+@media screen and (max-width : 780px) {
+    :root {
+        --moreBig: 10vw;
+        --big: 6vw;
+        --middle: 4vw;
+        --small: 3vw;
+
+        .fixed{
+            right:0;
+        }
+    }
+
+
+}
+

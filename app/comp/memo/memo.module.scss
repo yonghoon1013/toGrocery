@@ -1,0 +1,82 @@
+.header{
+    padding: var(--moreBig) 0 var(--big) var(--small);
+    margin-bottom: .6%;
+    text-align: start;
+    background-color: #FFFFFF;
+    font-size: var(--middle);
+    font-weight: bold;
+}
+
+.memo_list{
+    min-height: 100vh; 
+}
+.list{
+    padding: 0 var(--small);
+    height: 100%;
+    ul{
+        height: 100%;
+        li{
+            padding: var(--small);
+        }
+    }
+}
+
+.Cbut{
+    border-radius: 100%;
+    width: var(--middle);
+    height: var(--middle);
+    padding: 0;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{width: 100%; object-fit: cover;}
+}
+.check{
+    background: url('/asset/check.svg') center center/70% no-repeat #F5F5F5;
+
+    &.on{
+        border: calc(var(--small)/7) solid #79CC1D;
+        background: url('/asset/oncheck.svg') center center/90% no-repeat #FFFFFF;
+    }
+}
+.input{
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: .6%;
+    border-radius: var(--small);
+    >*{
+        display: flex;
+        align-items: center;
+        input{
+            width: 90%;
+            font-size: var(--small);
+        }
+    }
+    span{
+        font-size: var(--small);
+        }
+}
+.clear_but{
+    bottom: var(--moreBig);
+    width: var(--moreBig);
+    height: var(--moreBig);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: url('/asset/trash.svg') center center/50% no-repeat ;
+    background-color: #FFFFFF;
+    border: calc(var(--small)/10)  solid #828282;
+    // margin-bottom: 20px;
+    margin-bottom: 150px;
+}
+.Plus{
+    background: url('/asset/icon_Plus.svg') center center/110% no-repeat ;
+}
+
+.green{
+    background-color: #79CC1D;
+    border-color: #79CC1D;
+}

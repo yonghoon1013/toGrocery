@@ -1,0 +1,103 @@
+.myPage{
+    padding-top: 20%;
+    >h2{
+        font-size: var(--middle);
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .profileBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        padding: 5%;
+        border-radius: 20px;
+        margin: auto;
+        background-color: white;
+        >figure{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #D9D9D9;
+            position: relative;
+
+            >img{
+                display: block;
+                width: 50px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
+            }
+        }
+        .profileInfo{
+            flex: 1;
+            text-align: end;
+            margin-left: 30px;
+            line-height: 1.5;
+            .nickName{
+                font-size: var(--small);
+                text-align: start;
+            }
+            .nickName::after{
+                content: '>';
+                padding-left: 20px;
+            }
+            .email{
+                font-size: var(--small);
+                text-align: start;
+
+            }
+            >button{
+                margin-top: 10px;
+                background: none;
+                font-size: var(--small);
+            }
+        }
+        }
+
+        .profileUpdate{
+            width: 80%;
+            margin: auto;
+            padding: 5%;
+            >h2{
+                display: block;
+                margin-bottom: 30px;
+                font-size: var(--middle);
+            }
+            .updateBox{
+                padding: 5%;
+                background-color: white;
+                border-radius: 20px;
+                >form{
+                    >p{
+                        line-height: 2;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        >span{
+                            font-size: var(--small);
+                        }
+                        >input{
+                            padding-left: 10px;
+                            border: 1px solid rgba(0, 0, 0, 0.30);
+                            border-radius: 10px;
+                            
+                        }
+                    }
+                    >div{
+                        text-align: center;
+                        margin-top: 20px;
+                        >button{
+                            width: 120px;
+                            height: 40px;
+                            background-color: #79CC1D;
+                            border-radius: 10px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+}
